@@ -1,0 +1,380 @@
+/*css fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+  background : #e3f2fd ;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+
+}
+.border{
+    border: 2px solid #2196f3;
+}
+.w_border{
+    border: 2px solid transparent;
+}
+.stage1,.stage2,.stage3,.stage4{
+    position: relative;
+    top:0px;
+    height: 700px;
+    overflow: hidden;
+}
+.stage2,.stage3,.stage4 {
+    display: none;
+}
+.stage_main_outer_content{
+    position: relative;
+    height: 550px;
+    width: 550px;
+    border-radius: 275px;
+    left: 30%;
+   
+
+}
+
+#outer{
+     -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#outer.rotated {
+    -webkit-transform : rotate(360deg); 
+    -moz-transform : rotate(360deg); 
+    -ms-transform : rotate(360deg); 
+    -o-transform : rotate(360deg); 
+    transform : rotate(360deg); 
+}
+
+.rev_rotated{
+     -webkit-transform : rotate(-360deg); 
+    -moz-transform : rotate(-360deg);  
+    -ms-transform : rotate(-360deg); 
+    -o-transform : rotate(-360deg); 
+    transform :rotate(-360deg); 
+}
+
+
+.stage_main_outer{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 123px;
+    margin-top: 123px;
+
+}
+    
+.stage_main{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    margin-left: 73px;
+    margin-top: 73px;
+    background-color: #00b8d4;
+    cursor: pointer;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   
+}
+
+.stage_main #root_span{
+   
+   color: white;
+   position: relative;
+   height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    font-size: 100px;
+    right: 0;
+    left: 0;
+   text-align: center;
+
+     
+}
+.stage_main #root_span:hover{
+    background-color: #26c6da ;
+     transition: all .5s ease-in-out;
+}
+
+.stage_child{
+    
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+    background-color: #00bfa5 ;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ }
+ .stage_child:hover{
+  
+   width: 120px;
+   height: 120px;
+   transition: all .5s ease-in-out 1s;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   z-index: 999;
+
+ }
+
+
+#c_1 {
+     margin-left: 25px;
+    margin-top: -320px;
+}
+#c_1 span{
+    top: -60px;
+    margin-left: 110px;
+}
+#c_2 {
+    margin-left: -140px;
+    margin-top: -253px;
+}
+#c_2 span{
+    top: -60px;
+    margin-left: -120px;
+    margin-right: 120px;
+}
+#c_3{
+    margin-left: 190px;
+    margin-top: -252px;
+}
+#c_3 span{
+    top: -60px;
+    margin-left: 110px;
+}
+#c_4 {
+    margin-left: -174px;
+    margin-top: -120px;
+}
+#c_4 span{
+    top: -60px;
+    margin-left: -120px;
+    margin-right: 120px;
+}
+#c_5 {
+    margin-left: 225px;
+    margin-top: -120px;
+}
+#c_5 span{
+    top: -60px;
+    margin-left: 110px;
+}
+#c_6 {
+    margin-left: -140px;
+    margin-top: 19px;
+}
+#c_6 span{
+    top: -60px;
+    margin-left: -120px;
+    margin-right: 120px;
+}
+
+#c_7 {
+    margin-left: 190px;
+    margin-top: 20px;
+}
+#c_7 span{
+    top: -60px;
+    margin-left: 110px;
+}
+
+#c_8 {
+    margin-left: 25px;
+    margin-top: 80px;
+}
+#c_7 span{
+    top: -60px;
+    margin-left: -120px;
+    margin-right: 120px;
+}
+
+.stage_child div{
+
+    width: 90%; /* to remove 3d keep 100%*/
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-transform: capitalize;
+    font-size: 12px;
+     transition: all .5s ease-in-out;
+
+}
+.stage_child div.r_ob{
+    background-color: #01579b;
+}
+.stage_child div.r_ob:hover{
+    background-color: #0277bd;
+}
+.stage_child div{ /* :hover change here to remove 3d*/
+    background-color: #1de9b6;
+}
+.stage_child span{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #1BB980;
+    padding: .3rem;
+    font-size: 1rem;
+    opacity: 0;
+    background: #FFF;
+    border-radius: 5px;
+    color: #333;
+    z-index: 100;
+
+}
+.stage_child span.left{
+    top: -60px;
+    margin-left: -120px;
+    margin-right: 120px;
+}
+.stage_child span.right{
+    top: -60px;
+    margin-left: -110px;
+}
+
+
+.stage_child:hover span{
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.breadcrumb {
+    /*centering*/
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    counter-reset: flag; 
+    text-align: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    color: white;
+    /*need more margin on the left of links to accomodate the numbers*/
+    padding: 0 10px 0 60px;
+   
+    background: linear-gradient(#666, #333);
+    position: relative;
+}
+
+.breadcrumb a:first-child {
+    padding-left: 46px;
+    border-radius: 5px 0 0 5px; 
+}
+.breadcrumb a:first-child:before {
+    left: 14px;
+}
+.breadcrumb a:last-child {
+    border-radius: 0 5px 5px 0; 
+    padding-right: 20px;
+}
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover{
+    background: #333;
+    background: linear-gradient(#333, #000);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+    background: #333;
+    background: linear-gradient(135deg, #333, #000);
+}
+
+.breadcrumb a:after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: -18px; 
+    width: 36px; 
+    height: 36px;
+    transform: scale(0.707) rotate(45deg);
+    z-index: 1;
+    background: #666;
+    background: linear-gradient(135deg, #666, #333);
+    box-shadow: 2px -2px 0 2px rgba(240, 230, 230, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+    content: none;
+}
+
+.breadcrumb a:before {
+    content: counter(flag);
+    counter-increment: flag;
+    /*some styles now*/
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #444;
+    background: linear-gradient(#444, #222);
+    font-weight: bold;
+}
+
+
+.flat a, .flat a:after {
+    background: #01579b;
+    color: #fff;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+.flat a:before {
+    background: white;
+    color: #377A42;
+    box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+    background: #9EEB62;
+}
+
+.flat a.root, .flat a.root:after{
+    background-color: #e17d0b;
+}
+.flat a.obj , .flat a.obj:after{
+    background-color: #237816;
+}
+.flat a.current{
+   background-color: #00b8d4;
+}
+.breadcrumb.flat  a.current:before{
+
+     content: '\2605';
+        font-size: 21px;
+        color: #00b8d4;
+}
+
+.breadcrumb.flat a.last-child::after{
+  box-shadow: 2px -2px 0 2px rgba(219, 38, 77, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
